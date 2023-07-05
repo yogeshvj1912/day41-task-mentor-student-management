@@ -3,11 +3,9 @@ const StudentModel = require("../Models/Student.model");
 const MentorModel = require("../Models/Mentor.model");
 const { response } = require("../app");
 
-StudentRouter.get("/", async(req, res, next)=> {
-  const student =await StudentModel.find()
-  return res.status(200).json(student);
-});
-
+StudentRouter.get("/",(req,res)=>{
+    res.json("hello world")
+})
 
 //API to create Student
  StudentRouter.post("/createStudent",async (req, res) => {
