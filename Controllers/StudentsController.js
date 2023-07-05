@@ -1,7 +1,7 @@
 const StudentRouter = require("express").Router();
 const StudentModel = require("../Models/Student.model");
 const MentorModel = require("../Models/Mentor.model");
-const { response } = require("../app");
+
 
 StudentRouter.get("/",(req,res)=>{
     res.json("hello world")
