@@ -25,6 +25,9 @@ require("./dbconfig");
  */
 NODE_SERVER.use("/api", APP_SERVER);
 
+NODE_SERVER.get("/",(req,res)=>{
+res.status(200).json({message:"created successfully"})
+}) 
 /**
  * CONFIGURE NODE SERVER
  * PORT TO ACCEPT/SEND REQUEST/RESPONSE = 5000
